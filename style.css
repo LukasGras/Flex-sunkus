@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #3cb371 ;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px;
+}
+p,
+h2 {
+    margin: 10px;
+}
+.left-side {
+    width: 1000px;
+    margin: 20px;
+}
+
+.left-side article {
+    width: 1000px;
+    background: white;
+    margin: 20px;
+}
+
+.left-side img {
+    width: 1000px;
+    height: 700px;
+}
+.right-side {
+    width: 400px;
+    margin: 20px;
+}
+
+.right-side article {
+    width: 400px;
+    height: 600px;
+    background: white;
+    margin: 20px;
+    display: inline-block;
+}
+
+.right-side img {
+    width: 400px;
+    height: 275px;
+}
+
+article.small {
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    
+}
+
+.right-side .bottom {
+    height: 170px;
+    display: flex;
+    align-items: flex-end;
+}
+
+article.small {
+    width: 400px;
+    height: 250px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        margin: 0;
+        margin-left:30px ;
+    }
+    .left-side img {
+        width: 350px;
+        height: 250px;
+    }
+
+    .left-side article {
+        width: 350px;
+        background: white;
+        margin: 20px;
+    }
+    .right-side {
+        width: auto;
+    }
+
+    .right-side article:nth-of-type(1) {
+        height: 500px;
+    }
+
+    .right-side article {
+        width: 350px;
+        height: 200px;
+        background: white;
+        margin: 20px;
+    }
+    
+    .right-side img {
+        width: 350px;
+        height: 275px;
+    }
+    .right-side .bottom {
+        height: 100px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+}
+
+@media (min-width:601px) and (max-width: 1000px) {
+    .left-side img {
+        width: 500px;
+        height: 400px;
+    }
+
+    .left-side article {
+        width: 500px;
+        background: white;
+        margin: 20px;
+    }
+
+    .right-side article:nth-of-type(1) {
+        width: 500px;
+        height: 600px;
+    }
+
+    .right-side {
+        width: auto;
+        
+    }
+
+    .right-side article {
+        width: 400px;
+        height: 200px;
+        background: white;
+        margin: 20px;
+    }
+    
+    .right-side img {
+        width: 500px;
+        height: 400px;
+    }
+    .right-side .bottom {
+        height: 100px;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+
+
+
+
+
